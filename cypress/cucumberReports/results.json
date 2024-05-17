@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2761000000
+              "duration": 2541000000
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1873000000
+              "duration": 1911000000
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 27000000
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5598000000
+              "duration": 5506000000
             }
           }
         ],
@@ -87,7 +87,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1289000000
+              "duration": 920000000
             }
           },
           {
@@ -100,7 +100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 364000000
+              "duration": 355000000
             }
           },
           {
@@ -113,7 +113,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 33000000
             }
           },
           {
@@ -126,7 +126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2928000000
+              "duration": 2341000000
             }
           }
         ],
@@ -155,7 +155,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 398000000
+              "duration": 374000000
             }
           },
           {
@@ -185,7 +185,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 438000000
+              "duration": 406000000
             }
           },
           {
@@ -198,7 +198,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 29000000
             }
           },
           {
@@ -211,7 +211,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 437000000
+              "duration": 415000000
             }
           }
         ],
@@ -230,5 +230,1224 @@
     "name": "End to End testing",
     "tags": [],
     "uri": "cypress\\e2e\\BDD\\eCommerce.feature"
+  },
+  {
+    "description": "Login cases for the login page on Herokuapp",
+    "elements": [
+      {
+        "description": "",
+        "id": "internet-elements-testing-from-herokuapp;login-with-no-credentials-entered",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with no credentials entered",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 599000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Error message is shown on top",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internet-elements-testing-from-herokuapp;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "tomsmith",
+                      "SuperSecretPassword!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I enter valid, username and password",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 643000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Secure Area is displayed on title",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I am logged into secure page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internet-elements-testing-from-herokuapp;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter valid username and incorrect password",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 631000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "password invalid message is shown in red",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "user is on the login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internet-elements-testing-from-herokuapp;\"valid-user\":-practice-scenario-outline",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "\"Valid user\": Practice Scenario outline",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I enter valid \"tomsmith\" and \"SuperSecretPassword!\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "The message shown is \"You logged into a secure area!\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internet-elements-testing-from-herokuapp;\"invalid-user\":-practice-scenario-outline",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "\"Invalid user\": Practice Scenario outline",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I enter valid \"tomsmith\" and \"SuperSecretPassword\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 618000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "The message shown is \"Your password is invalid!\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internet-elements-testing-from-herokuapp;\"blank-credentials\":-practice-scenario-outline",
+        "keyword": "Scenario Outline",
+        "line": 36,
+        "name": "\"Blank credentials\": Practice Scenario outline",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I enter valid \" \" and \" \"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 306000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "The message shown is \"Your username is invalid!\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "internet-elements-testing-from-herokuapp",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Internet elements testing from Herokuapp",
+    "tags": [],
+    "uri": "cypress\\e2e\\BDD\\internetElements.feature"
+  },
+  {
+    "description": "    This Feature to practice Gherkin keywords more focus on the gherkin rather\n    on the step definition in Cypress.",
+    "elements": [
+      {
+        "description": "",
+        "id": "vending-machine-capacity;vending-machine-background-test",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Vending machine background test",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CoffeeType",
+                      "Water(ml)",
+                      "Cups",
+                      "Vending machine message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian",
+                      "10",
+                      "1",
+                      "Warning: Add more water"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian De-caf",
+                      "500",
+                      "6",
+                      "Warning: Max 5 cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Latte",
+                      "500",
+                      "2",
+                      "Brewing"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Machiatto",
+                      "100",
+                      "1",
+                      "Brewing"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The water qty required for 1cup of coffee is 100ml:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I press for CoffeeType \"Latte\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Water(ml)",
+                      "Cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "300",
+                      "3"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "vending machine has below water quantity:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "message shown is \"Brewing\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sometest",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "vending-machine-capacity;tags-practice",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Tags practice",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CoffeeType",
+                      "Water(ml)",
+                      "Cups",
+                      "Vending machine message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian",
+                      "10",
+                      "1",
+                      "Warning: Add more water"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian De-caf",
+                      "500",
+                      "6",
+                      "Warning: Max 5 cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Latte",
+                      "500",
+                      "2",
+                      "Brewing"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Machiatto",
+                      "100",
+                      "1",
+                      "Brewing"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The water qty required for 1cup of coffee is 100ml:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "The vending machine is working",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I press for CoffeeType \"Machiatto\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I get \"1\" Cups of coffee",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "message shown is \"Brewing\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "vending-machine-capacity;asterix-and-but",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Asterix and but",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CoffeeType",
+                      "Water(ml)",
+                      "Cups",
+                      "Vending machine message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian",
+                      "10",
+                      "1",
+                      "Warning: Add more water"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian De-caf",
+                      "500",
+                      "6",
+                      "Warning: Max 5 cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Latte",
+                      "500",
+                      "2",
+                      "Brewing"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Machiatto",
+                      "100",
+                      "1",
+                      "Brewing"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The water qty required for 1cup of coffee is 100ml:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "The vending machine has additional options:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 30,
+            "name": "can generate boiling water",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 31,
+            "name": "can generate chocolate milk",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I press for CoffeeType chocolate",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I get 1 cup hot chocolate",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "But ",
+            "line": 34,
+            "name": "I dont get to select number of cups",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "vending-machine-capacity;doc-strings",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Doc Strings",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CoffeeType",
+                      "Water(ml)",
+                      "Cups",
+                      "Vending machine message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian",
+                      "10",
+                      "1",
+                      "Warning: Add more water"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian De-caf",
+                      "500",
+                      "6",
+                      "Warning: Max 5 cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Latte",
+                      "500",
+                      "2",
+                      "Brewing"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Machiatto",
+                      "100",
+                      "1",
+                      "Brewing"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The water qty required for 1cup of coffee is 100ml:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "and can generate boiling water\nand can generate chocolate milk",
+                "line": 39
+              }
+            ],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "The vending machine has Doc String options:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I press for CoffeeType chocolate",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "I get 1 cup hot chocolate",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "But ",
+            "line": 45,
+            "name": "I dont get to select number of cups",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "vending-machine-capacity;scenario-outline",
+        "keyword": "Scenario Outline",
+        "line": 55,
+        "name": "scenario outline",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CoffeeType",
+                      "Water(ml)",
+                      "Cups",
+                      "Vending machine message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian",
+                      "10",
+                      "1",
+                      "Warning: Add more water"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian De-caf",
+                      "500",
+                      "6",
+                      "Warning: Max 5 cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Latte",
+                      "500",
+                      "2",
+                      "Brewing"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Machiatto",
+                      "100",
+                      "1",
+                      "Brewing"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The water qty required for 1cup of coffee is 100ml:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "The vending machine is working",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I press for \"Hot chocolate\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I press for 1",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "I see a  message shown is \"Hot chocolate in making\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "vending-machine-capacity;scenario-outline",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "scenario outline",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CoffeeType",
+                      "Water(ml)",
+                      "Cups",
+                      "Vending machine message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian",
+                      "10",
+                      "1",
+                      "Warning: Add more water"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Columbian De-caf",
+                      "500",
+                      "6",
+                      "Warning: Max 5 cups"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Latte",
+                      "500",
+                      "2",
+                      "Brewing"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Machiatto",
+                      "100",
+                      "1",
+                      "Brewing"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The water qty required for 1cup of coffee is 100ml:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "The vending machine is working",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I press for \"Water\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I press for 2",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "I see a  message shown is \"1 cup out of 2\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "vending-machine-capacity",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Vending machine capacity",
+    "tags": [],
+    "uri": "cypress\\e2e\\BDD\\practiceKeywords.feature"
   }
 ]

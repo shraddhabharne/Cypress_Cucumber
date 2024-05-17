@@ -4,7 +4,12 @@
   "description": "Tutorial on Cucumber-Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest":"npm run test --spec \"cypress/e2e/BDD/*.feature\"",
+    "cypressTest":"cypress run --spec \"cypress/e2e/spec.cy.js\"",
+    "regressionTest":"cypress run --env tags=\"@Regression\"  --headed --browser chrome",
+    "internetElementsTest":"npm run test --spec \"cypress/e2e/BDD/internetElements.feature\"",
+    "practiceKeywordsTest":"cypress run test --spec \"cypress/e2e/BDD/practiceKeywords.feature\""
   },
   "author": "Shraddha P",
   "license": "ISC",

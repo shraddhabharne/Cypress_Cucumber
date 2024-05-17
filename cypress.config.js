@@ -20,7 +20,7 @@ module.exports = defineConfig({
   },
   e2e: {
     setupNodeEvents,
-    specPattern:['**/*.feature','**/*.cy.{js,jsx,ts,tsx}'],
+    specPattern:['**/*.feature'],
     
   },
 });
